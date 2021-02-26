@@ -1,0 +1,35 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="{% static 'core/images/logo.png' %}" class="w-75 h-75 text-center p-3 md-3"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/"><i class="fa fa-fw fa-home"></i>Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'addemp' %}"><i class="fas fa-plus-square"></i>Add Employee</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'attend' %}"><i class="fas fa-calendar-alt"></i>Attendance</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="{% url 'dash' %}"><i class="fas fa-table"></i>Dashboard</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="{% url 'logout' %}"><i class="fas fa-sign-out-alt"></i>Logout</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href=""><i class="fas fa-user-plus"></i>Signup</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href=""><i class="fa fa-fw fa-user"></i>Login</a>
+        </li>
+      
+      </ul>
+    </div>
+  </div>
+</nav>

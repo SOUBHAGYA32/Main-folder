@@ -1,0 +1,54 @@
+{% extends 'core/base.html'%}
+{% load static %}
+{% block content %}
+<div class="container">
+<div class="container-fluid">
+<div class="jumbotron">
+  <div class="container">
+    <h1 class="display-4 text-success font-weight-bold"> Bank Employee List</h1>
+    <p class="lead text-danger font-italic font-weight-bold">All Registered Bank Employee List</p>
+  </div>
+    <table class="table table-bordered">
+    <thead class="border-bottom font-weight-bold">
+    <tr>
+    <td>Full Name</td>
+    <td>Employee Code</td>
+    <td>Mobile</td>
+    <td>Email</td>
+    <td>Designation</td>
+    <td>
+        <a href="{% url 'addemp' %}" class="btn btn-outline-success">
+        <i class="fas fa-plus"></i> Add New</a>
+    </td>
+    </tr>
+    </thead>
+    <tbody>
+        {%for employee in dash %}
+        <tr>
+        <td>{{employee.name}}</td>
+        <td>{{employee.emp_code}}</td>
+        <td>{{employee.mobile}}</td>
+        <td>{{employee.email}}</td>
+        <td>{{employee.desig}}</td>
+         <td>
+            <a href="#" class="btn text-secondary px-0">
+             <i class="far fa-edit fa-lg"></i>
+            </a>
+            <form action="#" method="post" class="d-inline">
+            {% csrf_token %}
+            <button type="submit" class="btn">
+             <i class="far fa-trash-alt fa-lg text-danger float-right"></i>
+                        </button>
+                    </form>
+                </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+    
+    </table>
+</div>
+</div>
+
+
+</div>
+{% endblock content %}

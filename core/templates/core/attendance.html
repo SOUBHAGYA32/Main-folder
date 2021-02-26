@@ -1,0 +1,40 @@
+{% extends 'core/base.html'%}
+{% load static %}
+{% block content %}
+<div class="container-fluid">
+<div class="col-sm-12">
+<h3 class="text-white my-5">Employee Attendance Page</h3>
+ <table class="table table-bordered table-hover table-dark">
+  <thead>
+    <tr>
+      <th scope="col">EMP ID</th>
+      <th scope="col">EMP NAME</th>
+      <th scope="col">ATTENDED DAYS</th>
+      <th scope="col">EMP LEAVE</th>
+      <th scope="col">TOTAL DAYS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">100</th>
+      <td>SOUBHAGYA RANJAN DAS</td>
+      <td>51</td>
+      <td>5</td>
+      <td>56</td>
+    </tr>
+    <tr>
+      <th scope="row">101</th>
+      <td>MONALISHA PANDA</td>
+      <td>51</td>
+      <td>5</td>
+      <td>56</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+</div>
+
+</div>
+
+{% endblock content %}

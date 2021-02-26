@@ -1,0 +1,338 @@
+{% extends 'core/base.html'%}
+{% load static %}
+{% block home %}
+<style>
+.jumbotron {
+    background-color: #f4511e;
+    color: #fff;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+  }
+.text-white{
+  font-size: 28px;
+}
+.btn:hover{
+  background-color: red;
+}
+.rounded{
+     display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.box {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px
+}
+
+.our-services {
+    margin-top: 75px;
+    padding-bottom: 30px;
+    padding: 0 60px;
+    min-height: 198px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: all .4s ease-in-out;
+    box-shadow: 0 0 25px 0 rgba(20, 27, 202, .17)
+}
+
+.our-services .icon {
+    margin-bottom: -21px;
+    transform: translateY(-50%);
+    text-align: center
+}
+
+.our-services:hover h4,
+.our-services:hover p {
+    color: #fff
+}
+
+.speedup:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #fb0054 0%, #f55b2a 100%)
+}
+
+.settings:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #34b5bf 0%, #210c59 100%)
+}
+
+.privacy:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #3615e7 0%, #44a2f6 100%)
+}
+
+.backups:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #fc6a0e 0%, #fdb642 100%)
+}
+
+.ssl:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #8d40fb 0%, #5a57fb 100%)
+}
+
+.database:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #27b88d 0%, #22dd73 100%)
+}
+.card {
+    background-color: #616161;
+    color: white;
+    margin-top: 50px;
+    border: none
+}
+
+.head1 {
+    font-weight: 900;
+    font-size: 30px
+}
+
+.bdr {
+    border-bottom: 1.5px solid #FFB74D;
+    width: 65px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+.card-footer {
+    justify-content: space-between;
+    border: none;
+    background: none;
+    border-bottom: 0.5px solid #9E9E9E
+}
+
+.footer-right>i {
+    margin-left: 15px
+}
+
+.fa-hand-holding-usd {
+    color: #FFB74D
+}
+
+.fa-handshake {
+    color: #FFB74D
+}
+
+.card-title {
+    margin-bottom: .75rem;
+    font-weight: 900;
+    font-size: 15px;
+    margin-top: 1.75rem
+}
+
+.learn-more {
+    color: #FFB74D
+}
+
+.fa-angle-right {
+    margin-left: 10px
+}
+
+.fa-3x {
+    color: #FFB74D
+}
+
+.card-content {
+    padding-right: 40px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px
+}
+
+.card-content>p {
+    color: #9E9E9E
+}
+
+.heading {
+    position: relative;
+    top: 75px
+}
+
+.follow-text {
+    color: #9E9E9E
+}
+</style>
+ <div class="container-fluid">
+  <div class="jumbotron text-center">
+  <h1 class="font-weight-bold">Bank Of India</h1> 
+  <p>Relationship Beyond Banking</p> 
+  <form>
+    <div class="container px-2">
+    <div class="input-group position-relative">
+      <input type="email" class="form-control" size="10" placeholder="Email Address" required>
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-danger">Subscribe</button>
+      </div>
+    </div>
+    </div>
+  </form>
+</div>
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2 class="text-warning font-weight-bold">About Company Page</h2><br>
+      <h4 class="text-white font-weight-light">We're here to help you when you need financial support</h4><br>
+      <p>Headquartered in Mumbai, Bank of India is a financial services provider commercial bank founded in 1906. It is a type of a public company providing retail as well as commercial banking facility to the consumers with a total of above 4545 bank-branches controlled through 50 Zonal offices.</p>
+      <br><button class="btn btn-default btn-lg bg-warning"><i class="fas fa-envelope-open"></i>Get in Touch</button>
+    </div>
+    <div class="col-sm-4">
+    <img src="{% static 'core/images/slide9.jpg' %}"  class="rounded float-right" alt="Bank Image">
+    </div>
+  </div>
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4">
+       <img src="{% static 'core/images/slide7.jpg' %}"  class="rounded float-left" alt="Bank Image">
+    </div>
+    <div class="col-sm-8 mt-5">
+      <h2 class="text-warning font-weight-bold">Our Values</h2><br>
+      <h4 class="text-white font-weight-light"><b class="text-warning">MISSION:</b> To Become The Bank Of choice For Corporates, Medium Business And Upmarket Retail Customers And Developmental banking For Small Business, Mass market And Rural Markets. </h4><br>
+      <p><strong class="text-warning">VISION:</strong> To Provide superior, proactive banking service to niche markets globally, while providing cost effective, responsive service to others in our role as a development bank, and in doing so, meet the requirements of our stackholders.</p>
+    </div>
+  </div>
+</div>
+</div>
+<div class="container-fluid">
+    <div class="container-fluid mb-5">
+    <div class="text-center mt-5">
+        <h1>Our Services</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-4 text-dark">
+            <div class="box">
+                <div class="our-services settings">
+                    <div class="icon"><i class="fas fa-landmark fa-7x text-warning"></i></div>
+                    <h4 >Star Home Loan</h4>
+                    <p>Provides home loans up to Rs.500 lakh where repayment ranges up to 30 years, with reasonable margin and nominal processing charges.
+                    BOI star home loan offers free personal accident insurance cover to its customers.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 text-dark">
+            <div class="box">
+                <div class="our-services speedup">
+                    <div class="icon"><span style="color: Dodgerblue;">
+                   <i class="fas fa-hand-holding-usd fa-7x"></i></span> </div>
+                    <h4>Star Personal Loan</h4>
+                    <p>Provides Personal loans up to Rs.500 lakh where repayment ranges up to 30 years, with reasonable margin and nominal processing charges.
+                    BOI star home loan offers free personal accident insurance cover to its customers.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 text-dark">
+            <div class="box">
+                <div class="our-services privacy">
+                    <div class="icon"><span style="color: Mediumslateblue;">
+                   <i class="far fa-credit-card fa-7x"></i></span>   </div>
+                    <h4>Credit Card</h4>
+                    <p>Bank of India offers its credit card products to a diverse section of customers and for every need. One may use Bank of India credit Cards for all their needs starting from shopping to holidays, dining or just about any other daily needs.  </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 text-dark">
+            <div class="box">
+                <div class="our-services backups">
+                    <div class="icon"><span style="color: red;">
+                  <i class="fas fa-mobile-alt fa-7x"></i></span></div>
+                    <h4>Mobile Banking</h4>
+                    <p>Customers can access their account, view mpassbook, transfer funds and much more with BOI Mobile banking.BOI offers BOI Mobile, a safe, secure and convenient channel for anytime, anywhere banking.  </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 text-dark">
+            <div class="box">
+                <div class="our-services ssl">
+                    <div class="icon"><span style="color: green;">
+                   <i class="fas fa-user-alt fa-7x"></i></span>  </div>
+                    <h4>Customer Service</h4>
+                    <p>24*7 customer care system which offers easy and convenient access to ones account
+                     and provides info about various products 
+                     and services.Customers can contact via sms,emails, toll free number etc</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 text-dark">
+            <div class="box">
+                <div class="our-services database">
+                    <div class="icon"> <span style="color: Tomato;">
+                   <i class="fas fa-tv fa-7x"></i></span>  </div>
+                    <h4>Net Banking</h4>
+                    <p>BOI enables its customers to indulge in many internet banking services available to them 24/7 and 365 days a year.
+                     For a successful net-banking to take place,consumers have to
+                      register themselves on the BOI website. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<div class="container-fluid">
+<div class='container-fluid'>
+    <div class="card">
+        <div class="heading text-center">
+            <div class="head1">Just Belive on Bank Of India</div>
+            <p class="bdr"></p>
+        </div>
+        <div class="card-body">
+            <div class="row m-0 pt-5">
+                <div class="card col-12 col-md-3">
+                    <div class="card-content"> <i class="fas fa-hand-holding-usd fa-3x"></i>
+                        <div class="card-title"> RECHARGE REPEAT CUSTOMER </div>
+                        <p><small>Save customers' cards for future phone orders</small></p>
+                        <div class="learn-more">
+                            <p> <small> LEARN MORE <label><i class="fas fa-angle-right"></i></label> </small> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-12 col-md-3">
+                    <div class="card-content"> <i class="far fa-handshake fa-3x"></i>
+                        <div class="card-title"> ACCEPT ELECTRONIC CHECK </div>
+                        <p><small>Save customers' cards for future phone orders</small></p>
+                        <div class="learn-more">
+                            <p> <small> LEARN MORE <label><i class="fas fa-angle-right"></i></label> </small> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-12 col-md-3">
+                    <div class="card-content"> <i class="fas fa-mobile-alt fa-3x"></i>
+                        <div class="card-title"> STREAMLINE PHONE PAYMENTS </div>
+                        <p><small>Save customers' cards for future phone orders</small></p>
+                        <div class="learn-more">
+                            <p> <small> LEARN MORE <label><i class="fas fa-angle-right"></i></label> </small> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-12 col-md-3">
+                    <div class="card-content"> <i class="fas fa-user-secret fa-3x"></i>
+                        <div class="card-title"> STAY<br /> SECURE </div>
+                        <p><small>Save customers' cards for future phone orders</small></p>
+                        <div class="learn-more">
+                            <p> <small> LEARN MORE <label><i class="fas fa-angle-right"></i></label> </small> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer row m-0">
+            <p> <label> <i class="fas fa-phone fa-rotate-90 text-primary"></i> </label> 1800 103 1906 (Tollfree) / 1800 220 229 (Tollfree - Covid Support) / (022) – 40919191 (chargeable number) 24 X 7</p>
+            <div>
+                <p> <small class="follow-text">FOLLOW US ON SOCIAL MEDIA</small> <label class="footer-right"> <i class="fab fa-instagram"></i> <i class="fab fa-facebook-square"></i> <i class="fab fa-linkedin"></i> <i class="fab fa-twitter-square"></i> </label> </p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock home %}
