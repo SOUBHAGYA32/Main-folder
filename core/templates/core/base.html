@@ -16,9 +16,9 @@
     <title>Home</title>
 </head>
 <body>
-    <div class="container-fluid bg-dark">
-    {% include 'core/navbar.html'%}
-    </div>
+    <header>
+     {% include 'core/navbar.html'%}
+    </header>
     {% block home %}{% endblock home %}
     {% block content %}{% endblock content %}
     <script src="{% static 'core/js/jquery.js' %}"></script>

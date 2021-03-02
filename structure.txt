@@ -1,0 +1,43 @@
+● project1
+|
++---● core (app folder)
+|   |
+|   +--● migrations (includes files related to migrations)
+|   |  
+|   +--● templates
+|   |  |--● core
+|   |  |  |--base.html
+|   |  |  |--addemp.html
+|   |  |  |--attendance.html
+|   |  |  |--base.html
+|   |  |  |--dashboard.html
+|   |  |  |--home.html
+|   |  |  |--login.html
+|   |  |  |--logout.html
+|   |  |  |--navbar.html
+|   |  |  |--signup.html
+|   |  |  |
+|   +--● Static
+|   |  |--● core
+|   |  |  |+-- ●CSS
+|   |  |  |    |--bootstrap.css
+|   |  |  |    |--style.css
+|   |  |  |+-- ●Images
+|   |  |  |    |--logo.png
+|   |  |  |    |--slide7.jpg
+|   |  |  |    |--slide9.jpg
+|   |  |  |+--- ● js
+|   |  |  |     |--all.js
+|   |  |  |     |--bootstrap.js
+|   |  |  |     |--jquery.js
+|   |  |  |     |--popper.js
+|   |
+|   |-- models.py
+|   |-- forms.py
+|   |-- urls.py
+|   |-- views.py
+|
++---● project1 (project folder)
+|   |
+|   |--settings.py 
+|   |--urls.py

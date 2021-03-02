@@ -1,7 +1,46 @@
 {% load static %}
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<style>
+.navbar
+{
+    background-color: black;
+}
+.navbar .brand-navbar img:hover
+{
+    opacity: 0.7;
+}
+.navbar ul
+{
+padding: 0px 30px 0px 0px;
+}
+.navbar ul li a{
+    color: white;
+    margin: 10px 0px 0px 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.navbar ul li a .fas{
+    padding-right:5px; 
+    padding-left:5px; 
+}
+.navbar ul li a:hover{
+    color: #15b000;
+}
+.navbar ul li.active > a {
+    color: #15b000;
+    font-weight: bold;
+    font-size: 12px;
+    border-left: 3px solid #15b000;
+    border-radius: 40px;
+}
+.iconStyle
+{
+    color: #15b000;
+}
+
+</style>
+<nav class="navbar navbar-expand-lg navStyle">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="{% static 'core/images/logo.png' %}" class="w-75 h-75 text-center p-3 md-3"></a>
+    <a class="navbar-brand" href="#">BANK EMPLOYEE MANAGEMENT SYSTEM</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -11,22 +50,34 @@
           <a class="nav-link active" aria-current="page" href="/"><i class="fa fa-fw fa-home"></i>Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'addemp' %}"><i class="fas fa-plus-square"></i>Add Employee</a>
+          <a class="nav-link" href="{% url 'addemp' %}"><i class="fas fa-plus-square"></i>NEW EMPLOYEE</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'attend' %}"><i class="fas fa-calendar-alt"></i>Attendance</a>
+          <a class="nav-link" href="{% url 'attend' %}"><i class="fas fa-calendar-alt"></i>ATTENDANCE</a>
         </li>
          <li class="nav-item">
-          <a class="nav-link" href="{% url 'dash' %}"><i class="fas fa-table"></i>Dashboard</a>
+          <a class="nav-link" href="{% url 'dash' %}"><i class="fas fa-table"></i>STAFF</a>
         </li>
          <li class="nav-item">
+          <a class="nav-link" href=""><i class="fa fa-fw fa-user"></i>NOTICE</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href=""><i class="fa fa-fw fa-user"></i>PAYROLL</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href=""><i class="fa fa-fw fa-user"></i>LEAVES</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href=""><i class="fa fa-fw fa-user"></i>ADMIN LOGIN</a>
+        </li>
+          <li class="nav-item">
           <a class="nav-link" href="{% url 'logout' %}"><i class="fas fa-sign-out-alt"></i>Logout</a>
         </li>
          <li class="nav-item">
           <a class="nav-link" href=""><i class="fas fa-user-plus"></i>Signup</a>
         </li>
          <li class="nav-item">
-          <a class="nav-link" href=""><i class="fa fa-fw fa-user"></i>Login</a>
+          <a class="nav-link" href=""><i class="fa fa-fw fa-user"></i>SETTINGS</a>
         </li>
       
       </ul>
