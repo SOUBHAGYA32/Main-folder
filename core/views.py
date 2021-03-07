@@ -32,9 +32,10 @@ def dash(request):
     return render(request, 'core/dashboard.html',context)
 
 def employee_delete(request,id):
-    employee = User.objects.get(pk=id)
-    employee.delete()
-    return redirect('core/dash')
+    if request.method == 'POST':
+        employee = User.objects.get(pk=id)
+        employee.delete()
+        return HttpResponseRedirect('/dash')
 
 def employee_update(request, id):
     return redirect('')
